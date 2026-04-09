@@ -38,7 +38,7 @@ export default function Detalle() {
           }}
         />
 
-        {/* 🔥 EDITAR */}
+
         {user?.role === "admin" && (
           <MyButton
             title="Editar"
@@ -48,7 +48,7 @@ export default function Detalle() {
           />
         )}
 
-        {/* 🔥 ELIMINAR */}
+
         {user?.role === "admin" && (
           <MyButton
             title="Eliminar"
