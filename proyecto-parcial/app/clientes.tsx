@@ -10,7 +10,7 @@ export default function Clientes() {
   const router = useRouter();
   const [clientes, setClientes] = useState<any[]>([]);
 
-  // 🔥 REFRESCO FUERTE
+ 
   useFocusEffect(
     useCallback(() => {
       const data = getClientes();
@@ -23,7 +23,7 @@ export default function Clientes() {
       colors={['#4c669f', '#4f51be', '#e6ebfa']}
       style={styles.container}
     >
-      {/* 🔥 HEADER BONITO */}
+    
       <View style={styles.headerContainer}>
         <MaterialIcons name="groups" size={28} color="white" />
         <Text style={styles.header}>Clientes</Text>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
 
-  // 🔥 CARD PRO
+ 
   card: {
     backgroundColor: 'white',
     padding: 18,
