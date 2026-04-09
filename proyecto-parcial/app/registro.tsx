@@ -10,7 +10,7 @@ import { addCliente } from '../services/clienteService';
 
 export default function RegistroScreen() {
   const router = useRouter();
-  const { role } = useLocalSearchParams(); // 🔥 viene desde index
+  const { role } = useLocalSearchParams(); 
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -33,7 +33,7 @@ export default function RegistroScreen() {
 
     const userRole = role === 'admin' ? 'admin' : 'user';
 
-    // 🔐 guardar usuario
+    
     registerUser({
       id: Date.now().toString(),
       email,
@@ -41,7 +41,7 @@ export default function RegistroScreen() {
       role: userRole,
     });
 
-    // 🔥 si es cliente → agregar a lista de clientes
+   
     if (userRole === "user") {
       addCliente({
         id: Date.now().toString(),
