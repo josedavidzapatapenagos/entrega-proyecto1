@@ -11,7 +11,6 @@ export default function EditarCliente() {
   const { id } = useLocalSearchParams();
   const router = useRouter();
 
-  // 🔥 asegurar id correcto
   const realId = Array.isArray(id) ? id[0] : id;
 
   const cliente = getClientes().find(c => c.id === realId);
