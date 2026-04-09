@@ -24,7 +24,7 @@ export default function LoginScreen() {
       return;
     }
 
-    // 🔥 validar rol seleccionado
+   
     if (roleParam && user.role !== roleParam) {
       Alert.alert("Error", "Rol incorrecto");
       return;
